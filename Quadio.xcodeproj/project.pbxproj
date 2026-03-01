@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018BE3651FA0B096C3FBC726 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDEFC7B6BEAB71191990E /* RootView.swift */; };
+		04826BD128838101FC1F83DB /* QSDecoderBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 372B6637803400E121F7FEAA /* QSDecoderBridge.mm */; };
+		0B33963D49DE79F80233614D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A65FF449A9949A0CE126B1 /* Assets.xcassets */; };
+		18F1C50D8461E00036D45069 /* ChannelAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D273BCA86BCB56B25B705 /* ChannelAssignment.swift */; };
+		22D205A9FA4C1B97FB916091 /* String+IfEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B1091D46062DEBDCF086F /* String+IfEmpty.swift */; };
+		38EDEFD17B17BAA9CB2C2ADE /* QSDecodeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B09F0A1010B3002460A05 /* QSDecodeEngine.swift */; };
+		39DE25FD212BB7D5E7A23882 /* ClientDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E059D0A63982B3427EEFA3 /* ClientDevice.swift */; };
+		3F12BF01E0AF8620295C267B /* TransportPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED333B65200AB5518F039BD /* TransportPacket.swift */; };
+		5DDEBBB51A8CDF0ADF5A770D /* ClientAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5B1F19D545DAB064AEC6A /* ClientAudioPlayer.swift */; };
+		5EBFB1EABF52DF3E117DC370 /* TransportPacketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEAC60657E6EEE540F2E24 /* TransportPacketTests.swift */; };
+		711BD141D77E3C540946C50F /* HostDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44F61ACAFB339365221D3F /* HostDashboardView.swift */; };
+		892975CA9946D1DF4AF7AFCA /* DecodedAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B80BFCEB846C0F763AC2 /* DecodedAsset.swift */; };
+		8A47DF65D39E6A375B727C0E /* qs_test_sequence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B09317E48C576B2439FB3F8 /* qs_test_sequence.wav */; };
+		A7B6AFC29460137051BFAD3C /* ChannelID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9C43F6F79AE1CDE6FDF48A /* ChannelID.swift */; };
+		BB23AB2E2023C0CF66DA78E6 /* AudioPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8280E6BCDF9250D5E27A3C5 /* AudioPipeline.swift */; };
+		C34254CE5F956321A466D34A /* UDPAudioTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1811EBC167691188DBE4AE0 /* UDPAudioTransport.swift */; };
+		CFD65DE4FA24E62973A3BDE3 /* DeviceDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518500AC4F5EDCDB70FAA4E9 /* DeviceDiscoveryService.swift */; };
+		D44B7DC997A44ABC57307109 /* ClockSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15A34A10435594147CB4C /* ClockSyncService.swift */; };
+		D9BF4CBB8EC96CA36E3004E3 /* View+CardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A8D772DF449D4E2430C1B /* View+CardStyle.swift */; };
+		E2AF9DB4A6A50BF112F87742 /* JitterBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78705CF68B7A7790290EDE0 /* JitterBufferTests.swift */; };
+		E83B251A9845049602A1A451 /* JitterBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B57AAACF075B573B74A2AFD /* JitterBuffer.swift */; };
+		E9E0CF1BCDEF1FD95350B037 /* ClientDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF957BADE895FC4042C880 /* ClientDashboardView.swift */; };
+		FB6FE203775A31D6B97E8FD0 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A421E759E10C4FC992799C /* AppModel.swift */; };
+		FCC62E86F589E41E357F6751 /* QuadioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96051F14FB1A4DD4116362F1 /* QuadioApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E3AB599E5AF4D14D6D5ACA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B68BCDC1A01EAD1E7C9B5DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E2954DA5F922D9159252118;
+			remoteInfo = Quadio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049EDEFC7B6BEAB71191990E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0A44F61ACAFB339365221D3F /* HostDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostDashboardView.swift; sourceTree = "<group>"; };
+		29F15A34A10435594147CB4C /* ClockSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockSyncService.swift; sourceTree = "<group>"; };
+		372B6637803400E121F7FEAA /* QSDecoderBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = QSDecoderBridge.mm; sourceTree = "<group>"; };
+		3B09317E48C576B2439FB3F8 /* qs_test_sequence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = qs_test_sequence.wav; sourceTree = "<group>"; };
+		3EBEAC60657E6EEE540F2E24 /* TransportPacketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportPacketTests.swift; sourceTree = "<group>"; };
+		3FFF957BADE895FC4042C880 /* ClientDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDashboardView.swift; sourceTree = "<group>"; };
+		4DE5B1F19D545DAB064AEC6A /* ClientAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAudioPlayer.swift; sourceTree = "<group>"; };
+		4F65C28FEDB24891CD9799DA /* Quadio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quadio-Bridging-Header.h"; sourceTree = "<group>"; };
+		518500AC4F5EDCDB70FAA4E9 /* DeviceDiscoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDiscoveryService.swift; sourceTree = "<group>"; };
+		5B57AAACF075B573B74A2AFD /* JitterBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitterBuffer.swift; sourceTree = "<group>"; };
+		5F9C43F6F79AE1CDE6FDF48A /* ChannelID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelID.swift; sourceTree = "<group>"; };
+		604A8D772DF449D4E2430C1B /* View+CardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CardStyle.swift"; sourceTree = "<group>"; };
+		6A0B09F0A1010B3002460A05 /* QSDecodeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSDecodeEngine.swift; sourceTree = "<group>"; };
+		7DC3474F37C091D14AB17361 /* QSDecoderBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSDecoderBridge.h; sourceTree = "<group>"; };
+		836B1091D46062DEBDCF086F /* String+IfEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IfEmpty.swift"; sourceTree = "<group>"; };
+		8B42930F657B3E205D609D41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		96051F14FB1A4DD4116362F1 /* QuadioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadioApp.swift; sourceTree = "<group>"; };
+		9ED333B65200AB5518F039BD /* TransportPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportPacket.swift; sourceTree = "<group>"; };
+		A252D9F41E56129AEC3FFF0F /* QuadioTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = QuadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8280E6BCDF9250D5E27A3C5 /* AudioPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPipeline.swift; sourceTree = "<group>"; };
+		AB51B80BFCEB846C0F763AC2 /* DecodedAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedAsset.swift; sourceTree = "<group>"; };
+		BFD9DE331C900C58A767E59D /* QSDecoderFallback.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QSDecoderFallback.hpp; sourceTree = "<group>"; };
+		C1811EBC167691188DBE4AE0 /* UDPAudioTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPAudioTransport.swift; sourceTree = "<group>"; };
+		C8E059D0A63982B3427EEFA3 /* ClientDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDevice.swift; sourceTree = "<group>"; };
+		CCC0E8DA8EF957B990E3E23F /* Quadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1A65FF449A9949A0CE126B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E78705CF68B7A7790290EDE0 /* JitterBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitterBufferTests.swift; sourceTree = "<group>"; };
+		F1A421E759E10C4FC992799C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		F37D273BCA86BCB56B25B705 /* ChannelAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAssignment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0055A746AEC353726F741839 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		156F91AA20BB317B61C500AC /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				0A44F61ACAFB339365221D3F /* HostDashboardView.swift */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		165E47E07EEC5E75635D77E7 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				3FFF957BADE895FC4042C880 /* ClientDashboardView.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		23B07CAAF23F457D7F84EDBE /* QuadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				E78705CF68B7A7790290EDE0 /* JitterBufferTests.swift */,
+				3EBEAC60657E6EEE540F2E24 /* TransportPacketTests.swift */,
+			);
+			path = QuadioTests;
+			sourceTree = "<group>";
+		};
+		367A82ADB03124BC5E1627DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC0E8DA8EF957B990E3E23F /* Quadio.app */,
+				A252D9F41E56129AEC3FFF0F /* QuadioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46479C693247AD0B9E99E4C9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				29F15A34A10435594147CB4C /* ClockSyncService.swift */,
+				518500AC4F5EDCDB70FAA4E9 /* DeviceDiscoveryService.swift */,
+				C1811EBC167691188DBE4AE0 /* UDPAudioTransport.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4B40E2BE43403EB231704672 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F37D273BCA86BCB56B25B705 /* ChannelAssignment.swift */,
+				5F9C43F6F79AE1CDE6FDF48A /* ChannelID.swift */,
+				C8E059D0A63982B3427EEFA3 /* ClientDevice.swift */,
+				9ED333B65200AB5518F039BD /* TransportPacket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C409882759FBD15EAAB1689 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				BA1BF95A6EA57228D8FB702B /* QSDecoder */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		55FAEE3852AA8FED2DAE5812 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A8280E6BCDF9250D5E27A3C5 /* AudioPipeline.swift */,
+				4DE5B1F19D545DAB064AEC6A /* ClientAudioPlayer.swift */,
+				AB51B80BFCEB846C0F763AC2 /* DecodedAsset.swift */,
+				5B57AAACF075B573B74A2AFD /* JitterBuffer.swift */,
+				6A0B09F0A1010B3002460A05 /* QSDecodeEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		92543B8B78211B3D42717182 /* Quadio */ = {
+			isa = PBXGroup;
+			children = (
+				E1A65FF449A9949A0CE126B1 /* Assets.xcassets */,
+				8B42930F657B3E205D609D41 /* Info.plist */,
+				4F65C28FEDB24891CD9799DA /* Quadio-Bridging-Header.h */,
+				96051F14FB1A4DD4116362F1 /* QuadioApp.swift */,
+				EA8D62E2B8855BA9B26DBEF9 /* App */,
+				CAD8FC071E16B24E8F48C60C /* Core */,
+				D8638FB98A6591288ED25FA6 /* Features */,
+				B1CB271CC62B8F9EAD86363E /* Resources */,
+			);
+			path = Quadio;
+			sourceTree = "<group>";
+		};
+		B1CB271CC62B8F9EAD86363E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B09317E48C576B2439FB3F8 /* qs_test_sequence.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA1BF95A6EA57228D8FB702B /* QSDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				7DC3474F37C091D14AB17361 /* QSDecoderBridge.h */,
+				372B6637803400E121F7FEAA /* QSDecoderBridge.mm */,
+				BFD9DE331C900C58A767E59D /* QSDecoderFallback.hpp */,
+			);
+			path = QSDecoder;
+			sourceTree = "<group>";
+		};
+		CAD8FC071E16B24E8F48C60C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				55FAEE3852AA8FED2DAE5812 /* Audio */,
+				4B40E2BE43403EB231704672 /* Models */,
+				46479C693247AD0B9E99E4C9 /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CBEFFA93B5237D30412D0B6E = {
+			isa = PBXGroup;
+			children = (
+				4C409882759FBD15EAAB1689 /* Bridge */,
+				92543B8B78211B3D42717182 /* Quadio */,
+				23B07CAAF23F457D7F84EDBE /* QuadioTests */,
+				0055A746AEC353726F741839 /* Vendor */,
+				367A82ADB03124BC5E1627DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8638FB98A6591288ED25FA6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				165E47E07EEC5E75635D77E7 /* Client */,
+				156F91AA20BB317B61C500AC /* Host */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EA8D62E2B8855BA9B26DBEF9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F1A421E759E10C4FC992799C /* AppModel.swift */,
+				049EDEFC7B6BEAB71191990E /* RootView.swift */,
+				836B1091D46062DEBDCF086F /* String+IfEmpty.swift */,
+				604A8D772DF449D4E2430C1B /* View+CardStyle.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E2954DA5F922D9159252118 /* Quadio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59586E6BB5B09EF28C13A9A3 /* Build configuration list for PBXNativeTarget "Quadio" */;
+			buildPhases = (
+				79A2A66B6EA280F1795E5DC4 /* Sources */,
+				6D06FB0FA765F6B2ABEB06BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quadio;
+			productName = Quadio;
+			productReference = CCC0E8DA8EF957B990E3E23F /* Quadio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F909F5F27DF85DD31324509E /* QuadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B27C7197A2947B44685E46E /* Build configuration list for PBXNativeTarget "QuadioTests" */;
+			buildPhases = (
+				B26A2B4DAB03B39B820C7574 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B4C60B31DF6A07869F39507 /* PBXTargetDependency */,
+			);
+			name = QuadioTests;
+			productName = QuadioTests;
+			productReference = A252D9F41E56129AEC3FFF0F /* QuadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B68BCDC1A01EAD1E7C9B5DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+			};
+			buildConfigurationList = 8F49EE8925CCF9117094BA05 /* Build configuration list for PBXProject "Quadio" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CBEFFA93B5237D30412D0B6E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E2954DA5F922D9159252118 /* Quadio */,
+				F909F5F27DF85DD31324509E /* QuadioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D06FB0FA765F6B2ABEB06BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B33963D49DE79F80233614D /* Assets.xcassets in Resources */,
+				8A47DF65D39E6A375B727C0E /* qs_test_sequence.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79A2A66B6EA280F1795E5DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6FE203775A31D6B97E8FD0 /* AppModel.swift in Sources */,
+				BB23AB2E2023C0CF66DA78E6 /* AudioPipeline.swift in Sources */,
+				18F1C50D8461E00036D45069 /* ChannelAssignment.swift in Sources */,
+				A7B6AFC29460137051BFAD3C /* ChannelID.swift in Sources */,
+				5DDEBBB51A8CDF0ADF5A770D /* ClientAudioPlayer.swift in Sources */,
+				E9E0CF1BCDEF1FD95350B037 /* ClientDashboardView.swift in Sources */,
+				39DE25FD212BB7D5E7A23882 /* ClientDevice.swift in Sources */,
+				D44B7DC997A44ABC57307109 /* ClockSyncService.swift in Sources */,
+				892975CA9946D1DF4AF7AFCA /* DecodedAsset.swift in Sources */,
+				CFD65DE4FA24E62973A3BDE3 /* DeviceDiscoveryService.swift in Sources */,
+				711BD141D77E3C540946C50F /* HostDashboardView.swift in Sources */,
+				E83B251A9845049602A1A451 /* JitterBuffer.swift in Sources */,
+				38EDEFD17B17BAA9CB2C2ADE /* QSDecodeEngine.swift in Sources */,
+				04826BD128838101FC1F83DB /* QSDecoderBridge.mm in Sources */,
+				FCC62E86F589E41E357F6751 /* QuadioApp.swift in Sources */,
+				018BE3651FA0B096C3FBC726 /* RootView.swift in Sources */,
+				22D205A9FA4C1B97FB916091 /* String+IfEmpty.swift in Sources */,
+				3F12BF01E0AF8620295C267B /* TransportPacket.swift in Sources */,
+				C34254CE5F956321A466D34A /* UDPAudioTransport.swift in Sources */,
+				D9BF4CBB8EC96CA36E3004E3 /* View+CardStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26A2B4DAB03B39B820C7574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AF9DB4A6A50BF112F87742 /* JitterBufferTests.swift in Sources */,
+				5EBFB1EABF52DF3E117DC370 /* TransportPacketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B4C60B31DF6A07869F39507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E2954DA5F922D9159252118 /* Quadio */;
+			targetProxy = 8E3AB599E5AF4D14D6D5ACA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		012E0F77D3E4CFBF3F7455F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		1690CC8C547218A85E97109A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BHJSDBBPS7;
+				INFOPLIST_FILE = Quadio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Quadio;
+				INFOPLIST_KEY_NSBonjourServices = _quadio._udp;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Quadio discovers nearby devices to route decoded QS channels over your local network.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIBackgroundModes = "audio fetch";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samroman.quadio;
+				PRODUCT_NAME = Quadio;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Quadio/Quadio-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7210471F496DAED1FC7F8EE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		BD2D4248BE26F9370209AF4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samroman.quadio.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quadio.app/Quadio";
+			};
+			name = Release;
+		};
+		BDD7626779DC56097DF682C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = BHJSDBBPS7;
+				INFOPLIST_FILE = Quadio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Quadio;
+				INFOPLIST_KEY_NSBonjourServices = _quadio._udp;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Quadio discovers nearby devices to route decoded QS channels over your local network.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIBackgroundModes = "audio fetch";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samroman.quadio;
+				PRODUCT_NAME = Quadio;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Quadio/Quadio-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D76B2459DEF2E7450CCEC538 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samroman.quadio.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quadio.app/Quadio";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59586E6BB5B09EF28C13A9A3 /* Build configuration list for PBXNativeTarget "Quadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD7626779DC56097DF682C2 /* Debug */,
+				1690CC8C547218A85E97109A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6B27C7197A2947B44685E46E /* Build configuration list for PBXNativeTarget "QuadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76B2459DEF2E7450CCEC538 /* Debug */,
+				BD2D4248BE26F9370209AF4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8F49EE8925CCF9117094BA05 /* Build configuration list for PBXProject "Quadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7210471F496DAED1FC7F8EE1 /* Debug */,
+				012E0F77D3E4CFBF3F7455F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B68BCDC1A01EAD1E7C9B5DC /* Project object */;
+}
