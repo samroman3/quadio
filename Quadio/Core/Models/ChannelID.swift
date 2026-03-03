@@ -1,6 +1,6 @@
 import Foundation
 
-enum ChannelID: UInt8, CaseIterable, Codable, Identifiable {
+enum ChannelID: UInt8, CaseIterable, Codable, Identifiable, Sendable {
     case frontLeft = 0
     case frontRight = 1
     case rearLeft = 2

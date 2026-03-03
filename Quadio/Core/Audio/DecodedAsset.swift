@@ -1,6 +1,6 @@
 import Foundation
 
-struct DecodedAsset {
+struct DecodedAsset: Sendable {
     let sourceName: String
     let sampleRate: Double
     let frameCount: Int

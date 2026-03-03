@@ -62,30 +62,40 @@ final class AppModel {
             }
         }
 
+        hostState.lastError = nil
+        hostState.isLoadingAsset = true
+
         do {
-            hostState.lastError = nil
-            hostState.decodedAsset = try audioPipeline.decodeFile(at: url)
-            hostState.streamProgress = 0
-            nextPacketPlayAtHostTimeNanos = nil
+            let asset = try await Task.detached(priority: .userInitiated) {
+                try AudioFileDecoder.decodeFile(at: url)
+            }.value
+            applyDecodedAsset(asset)
         } catch {
             hostState.lastError = error.localizedDescription
         }
+
+        hostState.isLoadingAsset = false
     }
 
-    func loadBundledSample() {
+    func loadBundledSample() async {
         guard let url = Bundle.main.url(forResource: "qs_test_sequence", withExtension: "wav") else {
             hostState.lastError = "Sample file is missing from this build."
             return
         }
 
+        hostState.lastError = nil
+        hostState.isLoadingAsset = true
+
         do {
-            hostState.lastError = nil
-            hostState.decodedAsset = try audioPipeline.decodeFile(at: url)
-            hostState.streamProgress = 0
-            nextPacketPlayAtHostTimeNanos = nil
+            let asset = try await Task.detached(priority: .userInitiated) {
+                try AudioFileDecoder.decodeFile(at: url)
+            }.value
+            applyDecodedAsset(asset)
         } catch {
             hostState.lastError = error.localizedDescription
         }
+
+        hostState.isLoadingAsset = false
     }
 
     func startStreaming() {
@@ -187,6 +197,13 @@ final class AppModel {
         nextPacketPlayAtHostTimeNanos = nil
     }
 
+    private func applyDecodedAsset(_ asset: DecodedAsset) {
+        stopStreaming()
+        hostState.decodedAsset = asset
+        hostState.streamProgress = 0
+        nextPacketPlayAtHostTimeNanos = nil
+    }
+
     private func handleIncoming(packet: TransportPacket) {
         clockSync.ingestHostTimestamp(packet.header.hostTimeNanos)
         clientState.assignedChannel = packet.header.channelID
@@ -222,6 +239,7 @@ enum AppRole: String, CaseIterable, Identifiable {
 struct HostState {
     var streamName = "Session"
     var decodedAsset: DecodedAsset?
+    var isLoadingAsset = false
     var isStreaming = false
     var streamProgress = 0.0
     var payloadFormat: PayloadFormat = .muLaw8

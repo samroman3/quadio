@@ -15,7 +15,8 @@ final class UDPAudioTransport {
     private(set) var healthSummary = "No packets sent yet"
     var onPacket: ((TransportPacket) -> Void)?
 
-    func startClientListener(port: UInt16 = 40000, serviceName: String = ProcessInfo.processInfo.hostName) {
+    func startClientListener(port: UInt16 = 40000) {
+        let serviceName = UserDefaults.standard.string(forKey: "deviceName") ?? ProcessInfo.processInfo.hostName
         guard listener == nil else { return }
 
         do {

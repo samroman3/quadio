@@ -10,6 +10,7 @@
 		018BE3651FA0B096C3FBC726 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049EDEFC7B6BEAB71191990E /* RootView.swift */; };
 		04826BD128838101FC1F83DB /* QSDecoderBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 372B6637803400E121F7FEAA /* QSDecoderBridge.mm */; };
 		0B33963D49DE79F80233614D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A65FF449A9949A0CE126B1 /* Assets.xcassets */; };
+		0B785722EC93A2B5E575E5B0 /* TextScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89FEBB2D36A23FB87F9A24A /* TextScale.swift */; };
 		18F1C50D8461E00036D45069 /* ChannelAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37D273BCA86BCB56B25B705 /* ChannelAssignment.swift */; };
 		22D205A9FA4C1B97FB916091 /* String+IfEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836B1091D46062DEBDCF086F /* String+IfEmpty.swift */; };
 		38EDEFD17B17BAA9CB2C2ADE /* QSDecodeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0B09F0A1010B3002460A05 /* QSDecodeEngine.swift */; };
@@ -17,6 +18,7 @@
 		3F12BF01E0AF8620295C267B /* TransportPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED333B65200AB5518F039BD /* TransportPacket.swift */; };
 		5DDEBBB51A8CDF0ADF5A770D /* ClientAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5B1F19D545DAB064AEC6A /* ClientAudioPlayer.swift */; };
 		5EBFB1EABF52DF3E117DC370 /* TransportPacketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEAC60657E6EEE540F2E24 /* TransportPacketTests.swift */; };
+		66A0FF92D4B5C4EE8CCAE18A /* AudioFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A0FF91D4B5C4EE8CCAE18A /* AudioFileDecoder.swift */; };
 		711BD141D77E3C540946C50F /* HostDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44F61ACAFB339365221D3F /* HostDashboardView.swift */; };
 		892975CA9946D1DF4AF7AFCA /* DecodedAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B80BFCEB846C0F763AC2 /* DecodedAsset.swift */; };
 		8A47DF65D39E6A375B727C0E /* qs_test_sequence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B09317E48C576B2439FB3F8 /* qs_test_sequence.wav */; };
@@ -57,6 +59,7 @@
 		5B57AAACF075B573B74A2AFD /* JitterBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitterBuffer.swift; sourceTree = "<group>"; };
 		5F9C43F6F79AE1CDE6FDF48A /* ChannelID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelID.swift; sourceTree = "<group>"; };
 		604A8D772DF449D4E2430C1B /* View+CardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CardStyle.swift"; sourceTree = "<group>"; };
+		66A0FF91D4B5C4EE8CCAE18A /* AudioFileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileDecoder.swift; sourceTree = "<group>"; };
 		6A0B09F0A1010B3002460A05 /* QSDecodeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSDecodeEngine.swift; sourceTree = "<group>"; };
 		7DC3474F37C091D14AB17361 /* QSDecoderBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSDecoderBridge.h; sourceTree = "<group>"; };
 		836B1091D46062DEBDCF086F /* String+IfEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IfEmpty.swift"; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		AB51B80BFCEB846C0F763AC2 /* DecodedAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedAsset.swift; sourceTree = "<group>"; };
 		BFD9DE331C900C58A767E59D /* QSDecoderFallback.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QSDecoderFallback.hpp; sourceTree = "<group>"; };
 		C1811EBC167691188DBE4AE0 /* UDPAudioTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPAudioTransport.swift; sourceTree = "<group>"; };
+		C89FEBB2D36A23FB87F9A24A /* TextScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScale.swift; sourceTree = "<group>"; };
 		C8E059D0A63982B3427EEFA3 /* ClientDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDevice.swift; sourceTree = "<group>"; };
 		CCC0E8DA8EF957B990E3E23F /* Quadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A65FF449A9949A0CE126B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 		55FAEE3852AA8FED2DAE5812 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				66A0FF91D4B5C4EE8CCAE18A /* AudioFileDecoder.swift */,
 				A8280E6BCDF9250D5E27A3C5 /* AudioPipeline.swift */,
 				4DE5B1F19D545DAB064AEC6A /* ClientAudioPlayer.swift */,
 				AB51B80BFCEB846C0F763AC2 /* DecodedAsset.swift */,
@@ -228,6 +233,7 @@
 				F1A421E759E10C4FC992799C /* AppModel.swift */,
 				049EDEFC7B6BEAB71191990E /* RootView.swift */,
 				836B1091D46062DEBDCF086F /* String+IfEmpty.swift */,
+				C89FEBB2D36A23FB87F9A24A /* TextScale.swift */,
 				604A8D772DF449D4E2430C1B /* View+CardStyle.swift */,
 			);
 			path = App;
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6FE203775A31D6B97E8FD0 /* AppModel.swift in Sources */,
+				66A0FF92D4B5C4EE8CCAE18A /* AudioFileDecoder.swift in Sources */,
 				BB23AB2E2023C0CF66DA78E6 /* AudioPipeline.swift in Sources */,
 				18F1C50D8461E00036D45069 /* ChannelAssignment.swift in Sources */,
 				A7B6AFC29460137051BFAD3C /* ChannelID.swift in Sources */,
@@ -328,6 +335,7 @@
 				FCC62E86F589E41E357F6751 /* QuadioApp.swift in Sources */,
 				018BE3651FA0B096C3FBC726 /* RootView.swift in Sources */,
 				22D205A9FA4C1B97FB916091 /* String+IfEmpty.swift in Sources */,
+				0B785722EC93A2B5E575E5B0 /* TextScale.swift in Sources */,
 				3F12BF01E0AF8620295C267B /* TransportPacket.swift in Sources */,
 				C34254CE5F956321A466D34A /* UDPAudioTransport.swift in Sources */,
 				D9BF4CBB8EC96CA36E3004E3 /* View+CardStyle.swift in Sources */,
